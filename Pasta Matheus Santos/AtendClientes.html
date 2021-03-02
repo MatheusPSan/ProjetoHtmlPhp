@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Atendimento do cliente</title>
+	</head>
+
+	<body>
+		<h2>Informações do cliente</h2>
+			<form action="incluirClientes.php" method="get">
+			Nome do cliente: <input type="text" name="nomeCliente" maxlength="35" size="35"
+			placeholder="Nome do cliente"> <br><br>
+			Data marcada:
+			<input type="date" name="dataMarcada">
+			Hora marcada:
+			<input type="time" name="horaMarcada"> <br><br>
+			Celular do cliente:
+			<input type="text" name="celCliente" size="10" maxlength="9"> 
+			DD: 
+			<input type="text" name="DD" size="2" maxlength="2"> <br><br>
+
+			O cliente compareceu?
+			Sim<input type="radio" id="Sim" name="presençaCliente">
+			Não<input type="radio" id="Não" name="presençaCliente"><br><br>
+
+
+			Valor total a se pagar:
+			R$<input type="number" min="1" step="any" placeholder="Valor a se pagar" name="valor"> <br><br>
+
+			Tipo de tratamento:
+			<input type="text" maxlength="45" size="50" name="tipoTratamento"><br><br>
+			
+			Observação:
+			<input type="text" size="100" name="obs" maxlength="100">
+			<hr>
+			<input type="submit" value="Cadastrar">
+			</form>
+	</body>
+</html>
